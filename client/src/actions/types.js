@@ -1,1 +1,1 @@
-export const ADD_COMMENT = 'auth_user';
+export const ADD_COMMENT = 'add_comment';
