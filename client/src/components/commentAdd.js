@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import { addComment } from '../actions';
 
-class CommentAdd extends React.Component {
+class CommentAdd extends Component {
   render() {
     const { handleSubmit, fields: { email, message } } = this.props;
 
