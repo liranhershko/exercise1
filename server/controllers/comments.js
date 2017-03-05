@@ -6,12 +6,6 @@ module.exports = {
     const message = req.body.message;
     const hash = req.body.hash;
 
-    if (!email || !message) {
-      return res
-        .status(422)
-        .send({ error: 'You must provide an email and a message' });
-    }
-
     const comment = new Comment({
       email: email,
       message: message,
